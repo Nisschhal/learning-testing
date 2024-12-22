@@ -12,10 +12,14 @@ import fizzbuzz from "./fizzbuzz"
 // any non-number (you decide, throw an Error or handle some other way)
 
 describe("fizzbuzz", () => {
-  it("return a string", () => {
+  it("return a Fizz for 3", () => {
     expect(fizzbuzz(3)).toBe("Fizz")
   })
-  it("return a string", () => {
+  it("return a Buzz for 5", () => {
+    expect(fizzbuzz(5)).toBe("Buzz")
+  })
+
+  it("return a FizzBuzz for 15", () => {
     expect(fizzbuzz(5)).toBe("Buzz")
   })
 })

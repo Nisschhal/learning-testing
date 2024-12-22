@@ -18,8 +18,10 @@ describe("fizzbuzz", () => {
   it("return a Buzz for 5", () => {
     expect(fizzbuzz(5)).toBe("Buzz")
   })
-
   it("return a FizzBuzz for 15", () => {
+    expect(fizzbuzz(5)).toBe("Buzz")
+  })
+  it("return a Buzz for 20", () => {
     expect(fizzbuzz(5)).toBe("Buzz")
   })
 })

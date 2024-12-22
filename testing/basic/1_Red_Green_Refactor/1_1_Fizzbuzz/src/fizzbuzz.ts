@@ -6,13 +6,7 @@
 // 42 returns "Fizz"
 // 45 returns "FizzBuzz"
 export default function fizzbuzz(num: number) {
-  return num === 3 || num == 9 || num == 42
-    ? "Fizz"
-    : num === 5
-    ? "Buzz"
-    : num === 15 || num === 45
-    ? "Fizzbuzz"
-    : num === 43
-    ? "43"
-    : ""
+  if (num === 3 || num == 9 || num == 42) return "Fizz"
+  if (num === 5) return "Buzz"
+  if (num === 15 || num === 45) return "Fizzbuzz"
 }

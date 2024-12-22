@@ -16,6 +16,6 @@ describe("fizzbuzz", () => {
     expect(fizzbuzz(3)).toBe("Fizz")
   })
   it("return a string", () => {
-    expect(fizzbuzz(5)).toBe("Fizz")
+    expect(fizzbuzz(5)).toBe("Buzz")
   })
 })

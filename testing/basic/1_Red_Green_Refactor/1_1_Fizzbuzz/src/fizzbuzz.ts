@@ -8,7 +8,7 @@
 export default function fizzbuzz(num: number) {
   const isMultipleOf3 = num % 3 === 0
   const isMultipleOf5 = num % 5 === 0
+  if (isMultipleOf3 && isMultipleOf5) return "Fizzbuzz"
   if (isMultipleOf3) return "Fizz"
   if (isMultipleOf5) return "Buzz"
-  if (isMultipleOf3 && isMultipleOf5) return "Fizzbuzz"
 }

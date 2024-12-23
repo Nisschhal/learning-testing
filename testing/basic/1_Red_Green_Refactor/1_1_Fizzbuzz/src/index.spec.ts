@@ -12,19 +12,21 @@ import fizzbuzz from "./fizzbuzz"
 // any non-number (you decide, throw an Error or handle some other way)
 
 describe("fizzbuzz", () => {
-  it.each([3, 6, 99])(
-    "return Fizz for multiplication of 3",
-    (value: number) => {
-      expect(fizzbuzz(value)).toBe("Fizz")
-    }
-  )
+  describe("array of test case", () => {
+    it.each([3, 6, 99])(
+      "return Fizz for multiplication of 3",
+      (value: number) => {
+        expect(fizzbuzz(value)).toBe("Fizz")
+      }
+    )
 
-  it.each([15, 30, 90])(
-    `return 'Fizzbuzz' for multiplication of 3 & 5`,
-    (value: number) => {
-      expect(fizzbuzz(value)).toBe("Fizzbuzz")
-    }
-  )
+    it.each([15, 30, 90])(
+      `return 'Fizzbuzz' for multiplication of 3 & 5`,
+      (value: number) => {
+        expect(fizzbuzz(value)).toBe("Fizzbuzz")
+      }
+    )
+  })
 
   it("return a Fizz for 3", () => {
     expect(fizzbuzz(3)).toBe("Fizz")

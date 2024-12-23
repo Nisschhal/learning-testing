@@ -12,6 +12,13 @@ import fizzbuzz from "./fizzbuzz"
 // any non-number (you decide, throw an Error or handle some other way)
 
 describe("fizzbuzz", () => {
+  it.each([3, 6, 9])(
+    "return 'Fizzbuzz' for multiplication of 3 & 5",
+    (value: number) => {
+      expect(fizzbuzz(value)).toBe("Fizzbuzz")
+    }
+  )
+
   it("return a Fizz for 3", () => {
     expect(fizzbuzz(3)).toBe("Fizz")
   })
